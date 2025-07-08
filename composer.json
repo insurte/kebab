@@ -1,5 +1,5 @@
 {
-    "name": "mention/kebab",
+    "name": "insurte/kebab",
     "description": "Wrappers around the PHP standard library focused on safety and testability",
     "type": "library",
     "license": "MIT",
@@ -21,7 +21,7 @@
         "classmap": ["tests"]
     },
     "require": {
-        "php": ">=8.1",
+        "php": ">=8.4",
         "beberlei/assert": "^3.0"
     },
     "require-dev": {
