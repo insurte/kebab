@@ -486,7 +486,7 @@ class PcreUtils
      */
     public static function quote(
         string $string,
-        string $delimiter = null
+        ?string $delimiter = null
     ): string {
         return null === $delimiter
             ? preg_quote($string)
