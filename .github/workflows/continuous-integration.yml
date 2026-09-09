@@ -29,17 +29,17 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1" # ratchet:actions/checkout@v7
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240" # ratchet:shivammathur/setup-php@v2
         with:
           coverage: "pcov"
           php-version: "${{ matrix.php-version }}"
           ini-values: memory_limit=-1
 
       - name: "Install dependencies"
-        uses: "ramsey/composer-install@v2"
+        uses: "ramsey/composer-install@1919f6c305aea6ab10e6181a8ddf72317ad77e0e" # ratchet:ramsey/composer-install@v2
         with:
           dependency-versions: "${{ matrix.dependencies }}"
 
@@ -62,17 +62,17 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1" # ratchet:actions/checkout@v7
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240" # ratchet:shivammathur/setup-php@v2
         with:
           coverage: "none"
           php-version: "${{ matrix.php-version }}"
           ini-values: memory_limit=-1
 
       - name: "Install dependencies"
-        uses: "ramsey/composer-install@v2"
+        uses: "ramsey/composer-install@1919f6c305aea6ab10e6181a8ddf72317ad77e0e" # ratchet:ramsey/composer-install@v2
         with:
           dependency-versions: "${{ matrix.dependencies }}"
 
@@ -95,17 +95,17 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1" # ratchet:actions/checkout@v7
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240" # ratchet:shivammathur/setup-php@v2
         with:
           coverage: "none"
           php-version: "${{ matrix.php-version }}"
           ini-values: memory_limit=-1
 
       - name: "Install dependencies"
-        uses: "ramsey/composer-install@v2"
+        uses: "ramsey/composer-install@1919f6c305aea6ab10e6181a8ddf72317ad77e0e" # ratchet:ramsey/composer-install@v2
         with:
           dependency-versions: "${{ matrix.dependencies }}"
 
@@ -128,17 +128,17 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1" # ratchet:actions/checkout@v7
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240" # ratchet:shivammathur/setup-php@v2
         with:
           coverage: "none"
           php-version: "${{ matrix.php-version }}"
           ini-values: memory_limit=-1
 
       - name: "Install dependencies"
-        uses: "ramsey/composer-install@v2"
+        uses: "ramsey/composer-install@1919f6c305aea6ab10e6181a8ddf72317ad77e0e" # ratchet:ramsey/composer-install@v2
         with:
           dependency-versions: "${{ matrix.dependencies }}"
 
